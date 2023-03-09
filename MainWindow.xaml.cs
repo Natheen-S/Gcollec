@@ -142,10 +142,18 @@ namespace Gcollec
             }
             else
             {
-                for (int i = 0; i < stud.Count; i++)
+                foreach (var item in stud)
                 {
-                    MessageBox.Show("Name : " + stud[i].name.ToString() + "\n" + "Age : " + stud[i].age.ToString() + "\n" + "Password : " + stud[i].pass.ToString() + "\n" + "Confirm Password : " + stud[i].cpass.ToString() + "\n" + "Country : " + stud[i].country.ToString() + "\n" + "State : " + stud[i].state.ToString());
+                    if (txtbox_name1.Text == item.name.ToString())
+                    {
+                        MessageBox.Show("Name : " + item.name.ToString() + "\n" + "Age : " + item.age.ToString() + "\n" + "Password : " + item.pass.ToString() + "\n" + "Confirm Password : " + item.cpass.ToString() + "\n" + "Country : " + item.country.ToString() + "\n" + "State : " + item.state.ToString());
+                    }
                 }
+
+                //for (int i = 0; i < stud.Count; i++)
+                //{
+                //    MessageBox.Show("Name : " + stud[i].name.ToString() + "\n" + "Age : " + stud[i].age.ToString() + "\n" + "Password : " + stud[i].pass.ToString() + "\n" + "Confirm Password : " + stud[i].cpass.ToString() + "\n" + "Country : " + stud[i].country.ToString() + "\n" + "State : " + stud[i].state.ToString());
+                //}
             }
 
 
